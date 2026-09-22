@@ -1,0 +1,25 @@
+{
+  "name": "@seatonjiang/lighthouse-snapshot-action",
+  "version": "1.0.0",
+  "description": "GitHub Action for creating snapshots of Tencent Cloud Lighthouse",
+  "license": "MIT",
+  "homepage": "https://github.com/seatonjiang/lighthouse-snapshot-action",
+  "bugs": {
+    "url": "https://github.com/seatonjiang/lighthouse-snapshot-action/issues",
+    "email": "hi@seatonjiang.com"
+  },
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "npx ncc build src/index.js -o dist"
+  },
+  "devDependencies": {
+    "@vercel/ncc": "^0.45.0"
+  },
+  "dependencies": {
+    "@actions/core": "^3.0.1",
+    "tencentcloud-sdk-nodejs-lighthouse": "^4.1.315"
+  },
+  "engines": {
+    "node": ">=24"
+  }
+}
