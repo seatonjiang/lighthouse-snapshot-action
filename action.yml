@@ -1,0 +1,22 @@
+name: "Lighthouse Snapshot Action"
+description: "GitHub Action for creating snapshots of Tencent Cloud Lighthouse"
+author: "Seaton Jiang"
+branding:
+  color: "blue"
+  icon: "camera"
+inputs:
+  secret_id:
+    description: "Tencent Cloud Secret ID"
+    required: true
+  secret_key:
+    description: "Tencent Cloud Secret Key"
+    required: true
+  region_instance:
+    description: "Regions and Instance IDs"
+    required: true
+  snapshot_mode:
+    description: "Snapshot mode"
+    required: true
+runs:
+  using: "node24"
+  main: "dist/index.js"
